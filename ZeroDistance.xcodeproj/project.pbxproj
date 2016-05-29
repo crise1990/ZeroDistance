@@ -13,6 +13,14 @@
 		0463DF331CF1F8B000741222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463DF311CF1F8B000741222 /* LaunchScreen.storyboard */; };
 		0463DF3E1CF1F8B000741222 /* ZeroDistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463DF3D1CF1F8B000741222 /* ZeroDistanceTests.swift */; };
 		0463DF491CF1F8B000741222 /* ZeroDistanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463DF481CF1F8B000741222 /* ZeroDistanceUITests.swift */; };
+		7E23E0EF1CFA6D0D006BC0F1 /* ZDContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0E81CFA6D0D006BC0F1 /* ZDContactsCell.swift */; };
+		7E23E0F01CFA6D0D006BC0F1 /* ZDContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0E91CFA6D0D006BC0F1 /* ZDContactsViewController.swift */; };
+		7E23E0F11CFA6D0D006BC0F1 /* ZDContactUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0EA1CFA6D0D006BC0F1 /* ZDContactUIButton.swift */; };
+		7E23E0F21CFA6D0D006BC0F1 /* ZDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0EC1CFA6D0D006BC0F1 /* ZDProfileViewController.swift */; };
+		7E23E0F31CFA6D0D006BC0F1 /* ZDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0EE1CFA6D0D006BC0F1 /* ZDTabBarController.swift */; };
+		7E23E0F81CFA6E11006BC0F1 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0F71CFA6E11006BC0F1 /* Contacts.storyboard */; };
+		7E23E0FB1CFA6EA2006BC0F1 /* Feeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */; };
+		7E23E0FD1CFA6EE2006BC0F1 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0FC1CFA6EE2006BC0F1 /* Me.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		0463DF441CF1F8B000741222 /* ZeroDistanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroDistanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463DF481CF1F8B000741222 /* ZeroDistanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroDistanceUITests.swift; sourceTree = "<group>"; };
 		0463DF4A1CF1F8B000741222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E23E0E81CFA6D0D006BC0F1 /* ZDContactsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactsCell.swift; sourceTree = "<group>"; };
+		7E23E0E91CFA6D0D006BC0F1 /* ZDContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactsViewController.swift; sourceTree = "<group>"; };
+		7E23E0EA1CFA6D0D006BC0F1 /* ZDContactUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactUIButton.swift; sourceTree = "<group>"; };
+		7E23E0EC1CFA6D0D006BC0F1 /* ZDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDProfileViewController.swift; sourceTree = "<group>"; };
+		7E23E0EE1CFA6D0D006BC0F1 /* ZDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTabBarController.swift; sourceTree = "<group>"; };
+		7E23E0F71CFA6E11006BC0F1 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Contacts.storyboard; path = ZeroDistance/Contacts.storyboard; sourceTree = SOURCE_ROOT; };
+		7E23E0FA1CFA6EA2006BC0F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feeds.storyboard; sourceTree = "<group>"; };
+		7E23E0FC1CFA6EE2006BC0F1 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Me.storyboard; path = ../Me.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +111,12 @@
 		0463DF271CF1F8B000741222 /* ZeroDistance */ = {
 			isa = PBXGroup;
 			children = (
+				7E23E0E71CFA6D0D006BC0F1 /* Contacts */,
+				7E23E0EB1CFA6D0D006BC0F1 /* Profile */,
+				7E23E0ED1CFA6D0D006BC0F1 /* TabBarController */,
 				0463DF281CF1F8B000741222 /* AppDelegate.swift */,
 				0463DF2C1CF1F8B000741222 /* Main.storyboard */,
+				7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */,
 				0463DF2F1CF1F8B000741222 /* Assets.xcassets */,
 				0463DF311CF1F8B000741222 /* LaunchScreen.storyboard */,
 				0463DF341CF1F8B000741222 /* Info.plist */,
@@ -120,6 +140,34 @@
 				0463DF4A1CF1F8B000741222 /* Info.plist */,
 			);
 			path = ZeroDistanceUITests;
+			sourceTree = "<group>";
+		};
+		7E23E0E71CFA6D0D006BC0F1 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				7E23E0F71CFA6E11006BC0F1 /* Contacts.storyboard */,
+				7E23E0E81CFA6D0D006BC0F1 /* ZDContactsCell.swift */,
+				7E23E0E91CFA6D0D006BC0F1 /* ZDContactsViewController.swift */,
+				7E23E0EA1CFA6D0D006BC0F1 /* ZDContactUIButton.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		7E23E0EB1CFA6D0D006BC0F1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7E23E0FC1CFA6EE2006BC0F1 /* Me.storyboard */,
+				7E23E0EC1CFA6D0D006BC0F1 /* ZDProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7E23E0ED1CFA6D0D006BC0F1 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				7E23E0EE1CFA6D0D006BC0F1 /* ZDTabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +238,7 @@
 				TargetAttributes = {
 					0463DF241CF1F8B000741222 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = S9G2L3L6R3;
+						DevelopmentTeam = MK2PUYTM7R;
 					};
 					0463DF381CF1F8B000741222 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -229,7 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E23E0FB1CFA6EA2006BC0F1 /* Feeds.storyboard in Resources */,
 				0463DF331CF1F8B000741222 /* LaunchScreen.storyboard in Resources */,
+				7E23E0FD1CFA6EE2006BC0F1 /* Me.storyboard in Resources */,
+				7E23E0F81CFA6E11006BC0F1 /* Contacts.storyboard in Resources */,
 				0463DF301CF1F8B000741222 /* Assets.xcassets in Resources */,
 				0463DF2E1CF1F8B000741222 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E23E0F01CFA6D0D006BC0F1 /* ZDContactsViewController.swift in Sources */,
+				7E23E0F21CFA6D0D006BC0F1 /* ZDProfileViewController.swift in Sources */,
+				7E23E0EF1CFA6D0D006BC0F1 /* ZDContactsCell.swift in Sources */,
+				7E23E0F31CFA6D0D006BC0F1 /* ZDTabBarController.swift in Sources */,
+				7E23E0F11CFA6D0D006BC0F1 /* ZDContactUIButton.swift in Sources */,
 				0463DF291CF1F8B000741222 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +362,14 @@
 				0463DF321CF1F8B000741222 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E23E0FA1CFA6EA2006BC0F1 /* Base */,
+			);
+			name = Feeds.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -398,10 +462,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ZeroDistance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crise.ZeroDistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +476,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ZeroDistance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crise.ZeroDistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
