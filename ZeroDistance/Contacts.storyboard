@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="97" y="1010"/>
         </scene>
-        <!--Contacts View Controller-->
+        <!--联系人-->
         <scene sceneID="8it-9f-MtV">
             <objects>
                 <tableViewController id="NTq-U5-l7t" customClass="ZDContactsViewController" customModule="ZeroDistance" customModuleProvider="target" sceneMemberID="viewController">
@@ -102,7 +102,7 @@
                             <outlet property="delegate" destination="NTq-U5-l7t" id="Tu0-u7-JNd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="N48-BO-7bJ"/>
+                    <navigationItem key="navigationItem" title="联系人" id="N48-BO-7bJ"/>
                     <connections>
                         <outlet property="headView" destination="bQ5-eE-vo3" id="vc2-yi-E7s"/>
                     </connections>

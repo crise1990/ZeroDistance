@@ -49,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="111" y="-373"/>
         </scene>
-        <!--View Controller-->
+        <!--消息-->
         <scene sceneID="AAZ-yL-TKV">
             <objects>
                 <viewController id="KRD-4p-Srw" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7MB-zN-ddX"/>
+                    <navigationItem key="navigationItem" title="消息" id="7MB-zN-ddX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPy-54-wAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="103" y="320"/>
         </scene>
-        <!--View Controller-->
+        <!--对讲-->
         <scene sceneID="17S-G1-iDL">
             <objects>
                 <viewController id="KqM-W2-J5G" sceneMemberID="viewController">
@@ -98,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="L80-Ri-6c7"/>
+                    <navigationItem key="navigationItem" title="对讲" id="L80-Ri-6c7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upL-tP-1gr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
