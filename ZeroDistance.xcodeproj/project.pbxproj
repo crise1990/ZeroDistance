@@ -238,7 +238,7 @@
 				TargetAttributes = {
 					0463DF241CF1F8B000741222 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = MK2PUYTM7R;
+						DevelopmentTeam = S9G2L3L6R3;
 					};
 					0463DF381CF1F8B000741222 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -462,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ZeroDistance/Info.plist;
@@ -476,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ZeroDistance/Info.plist;
