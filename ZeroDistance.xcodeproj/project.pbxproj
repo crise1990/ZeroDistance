@@ -18,8 +18,9 @@
 		7E23E0F21CFA6D0D006BC0F1 /* ZDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0EC1CFA6D0D006BC0F1 /* ZDProfileViewController.swift */; };
 		7E23E0F31CFA6D0D006BC0F1 /* ZDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0EE1CFA6D0D006BC0F1 /* ZDTabBarController.swift */; };
 		7E23E0F81CFA6E11006BC0F1 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0F71CFA6E11006BC0F1 /* Contacts.storyboard */; };
-		7E23E0FB1CFA6EA2006BC0F1 /* Feeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */; };
 		7E23E0FD1CFA6EE2006BC0F1 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0FC1CFA6EE2006BC0F1 /* Me.storyboard */; };
+		7E894FED1CFEFADE00D5EA17 /* Feeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */; };
+		7E894FEF1CFEFB0300D5EA17 /* ZDFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,9 @@
 		7E23E0EC1CFA6D0D006BC0F1 /* ZDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDProfileViewController.swift; sourceTree = "<group>"; };
 		7E23E0EE1CFA6D0D006BC0F1 /* ZDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTabBarController.swift; sourceTree = "<group>"; };
 		7E23E0F71CFA6E11006BC0F1 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Contacts.storyboard; path = ZeroDistance/Contacts.storyboard; sourceTree = SOURCE_ROOT; };
-		7E23E0FA1CFA6EA2006BC0F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feeds.storyboard; sourceTree = "<group>"; };
 		7E23E0FC1CFA6EE2006BC0F1 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Me.storyboard; path = ../Me.storyboard; sourceTree = "<group>"; };
+		7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feeds.storyboard; sourceTree = "<group>"; };
+		7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDFeedsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +111,12 @@
 		0463DF271CF1F8B000741222 /* ZeroDistance */ = {
 			isa = PBXGroup;
 			children = (
+				7E894FEB1CFEFADE00D5EA17 /* Feeds */,
 				7E23E0E71CFA6D0D006BC0F1 /* Contacts */,
 				7E23E0EB1CFA6D0D006BC0F1 /* Profile */,
 				7E23E0ED1CFA6D0D006BC0F1 /* TabBarController */,
 				0463DF281CF1F8B000741222 /* AppDelegate.swift */,
 				0463DF2C1CF1F8B000741222 /* Main.storyboard */,
-				7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */,
 				0463DF2F1CF1F8B000741222 /* Assets.xcassets */,
 				0463DF341CF1F8B000741222 /* Info.plist */,
 			);
@@ -165,6 +167,15 @@
 				7E23E0EE1CFA6D0D006BC0F1 /* ZDTabBarController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		7E894FEB1CFEFADE00D5EA17 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */,
+				7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */,
+			);
+			path = Feeds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E23E0FB1CFA6EA2006BC0F1 /* Feeds.storyboard in Resources */,
+				7E894FED1CFEFADE00D5EA17 /* Feeds.storyboard in Resources */,
 				7E23E0FD1CFA6EE2006BC0F1 /* Me.storyboard in Resources */,
 				7E23E0F81CFA6E11006BC0F1 /* Contacts.storyboard in Resources */,
 				0463DF301CF1F8B000741222 /* Assets.xcassets in Resources */,
@@ -307,6 +318,7 @@
 				7E23E0F21CFA6D0D006BC0F1 /* ZDProfileViewController.swift in Sources */,
 				7E23E0EF1CFA6D0D006BC0F1 /* ZDContactsCell.swift in Sources */,
 				7E23E0F31CFA6D0D006BC0F1 /* ZDTabBarController.swift in Sources */,
+				7E894FEF1CFEFB0300D5EA17 /* ZDFeedsViewController.swift in Sources */,
 				7E23E0F11CFA6D0D006BC0F1 /* ZDContactUIButton.swift in Sources */,
 				0463DF291CF1F8B000741222 /* AppDelegate.swift in Sources */,
 			);
@@ -350,14 +362,6 @@
 				0463DF2D1CF1F8B000741222 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E23E0FA1CFA6EA2006BC0F1 /* Base */,
-			);
-			name = Feeds.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
