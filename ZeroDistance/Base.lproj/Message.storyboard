@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8h3-ua-Jai">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--聊天-->
+        <scene sceneID="Ou1-Ib-zEt">
+            <objects>
+                <navigationController id="8h3-ua-Jai" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="聊天" image="ChatButton_Unselect" selectedImage="ChatButton" id="oDk-9C-RSf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics">
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </simulatedTabBarMetrics>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="INg-Ny-TdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RIm-Sl-V3l" kind="relationship" relationship="rootViewController" id="CLp-3X-xxM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHj-Ub-vz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-373"/>
+        </scene>
+        <!--UIViewController-KRD-4p-Srw-->
+        <scene sceneID="ra4-oG-RKP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-KRD-4p-Srw" id="RIm-Sl-V3l" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rj6-P5-9Yt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="-373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ChatButton" width="26" height="25"/>
+        <image name="ChatButton_Unselect" width="28" height="27"/>
+    </resources>
+</document>

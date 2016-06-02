@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bV3-8X-Zvp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--对讲-->
+        <scene sceneID="lrO-TB-lSY">
+            <objects>
+                <navigationController id="bV3-8X-Zvp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="对讲" image="PTT_Unselect" selectedImage="PTT" id="0sn-s8-Wmu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics">
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </simulatedTabBarMetrics>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5PF-k7-JaP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KqM-W2-J5G" kind="relationship" relationship="rootViewController" id="rg5-UR-tfw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvL-fT-diI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="320"/>
+        </scene>
+        <!--对讲-->
+        <scene sceneID="17S-G1-iDL">
+            <objects>
+                <viewController id="KqM-W2-J5G" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2yo-Kw-IXh"/>
+                        <viewControllerLayoutGuide type="bottom" id="hSj-Q0-NwM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aZJ-D6-62y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="对讲" id="L80-Ri-6c7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upL-tP-1gr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PTT" width="33" height="29"/>
+        <image name="PTT_Unselect" width="33" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8h3-ua-Jai">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--聊天-->
+        <scene sceneID="Ou1-Ib-zEt">
+            <objects>
+                <navigationController id="8h3-ua-Jai" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="聊天" image="ChatButton_Unselect" selectedImage="ChatButton" id="oDk-9C-RSf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics">
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </simulatedTabBarMetrics>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="INg-Ny-TdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KRD-4p-Srw" kind="relationship" relationship="rootViewController" id="CLp-3X-xxM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHj-Ub-vz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-373"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="AAZ-yL-TKV">
+            <objects>
+                <viewController id="KRD-4p-Srw" customClass="ZDMessageViewController" customModule="ZeroDistance" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="57n-co-woM"/>
+                        <viewControllerLayoutGuide type="bottom" id="1XH-rZ-v9S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sgu-Za-nFR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W1j-ho-Gne">
+                                <rect key="frame" x="20" y="64" width="560" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="W1j-ho-Gne" secondAttribute="trailing" id="1l5-wJ-Pid"/>
+                            <constraint firstItem="1XH-rZ-v9S" firstAttribute="top" secondItem="W1j-ho-Gne" secondAttribute="bottom" id="TYl-aX-MdY"/>
+                            <constraint firstItem="W1j-ho-Gne" firstAttribute="top" secondItem="57n-co-woM" secondAttribute="bottom" id="c6p-47-opi"/>
+                            <constraint firstItem="W1j-ho-Gne" firstAttribute="leading" secondItem="sgu-Za-nFR" secondAttribute="leadingMargin" id="kYp-vR-qWX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="7MB-zN-ddX"/>
+                    <connections>
+                        <outlet property="messageTableView" destination="W1j-ho-Gne" id="Z1Q-la-Lx6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPy-54-wAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="-373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ChatButton" width="26" height="25"/>
+        <image name="ChatButton_Unselect" width="28" height="27"/>
+    </resources>
+</document>
