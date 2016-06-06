@@ -49,7 +49,7 @@ class ZDContactsViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ContatctsCell", forIndexPath: indexPath) as! ZDContactsCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ContactsCell", forIndexPath: indexPath) as! ZDContactsCell
 
         // Configure the cell...
         cell.avatarImageView.image = UIImage(named: avatarImageName[indexPath.row])
