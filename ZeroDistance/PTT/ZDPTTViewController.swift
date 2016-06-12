@@ -1,26 +1,23 @@
 //
-//  ZDMessageViewController.swift
+//  ZDPTTViewController.swift
 //  ZeroDistance
 //
-//  Created by mac on 16/6/3.
+//  Created by zhangkuo on 16/6/9.
 //  Copyright © 2016年 mac. All rights reserved.
 //
 
 import UIKit
 
-class ZDMessageViewController: UITableViewController {
+class ZDPTTViewController: UITableViewController {
+    
+    let groupName:[String] = ["对讲组01","对讲组02","对讲组03","对讲组04","对讲组05","对讲组06","对讲组07","对讲组08","对讲组09","a对讲组10"]
+    let PTTimage:[String] = ["Group","Group","Group","Group","Group","Group","Group","Group","Group","Group"]
+    let time:[String] = ["刚刚","8分钟前","1小时前","2天前","2天前","2天前","2天前","2天前","2天前","2天前"]
+    
 
-    @IBOutlet var messageTableView: UITableView!
-    
-    let userdata = [
-        messageBox(avatar: "avatar02", name: "zhangk", content: "test01", time: "13:08"),
-        messageBox(avatar: "avatar03", name: "logggy", content: "test012222", time: "2 hours ago"),
-        messageBox(avatar: "avatar04", name: "Lanbert", content: "tes2222", time: "2 days ago")
-        
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 70.0
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -43,25 +40,20 @@ class ZDMessageViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return userdata.count
-        
+        return groupName.count
     }
 
-   
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell", forIndexPath: indexPath) as! ZDMessageCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("PTTCell", forIndexPath: indexPath)
 
-         //Configure the cell...
-        let message = userdata[indexPath.row]
-        cell.avatarImageView.image = UIImage(named: message.avatar)
-        cell.nameLabel.text = message.name
-        cell.contentLabel.text = message.content
-        cell.timeLabel.text = message.time
-        
+        cell.imageView?.image = UIImage(named: PTTimage[indexPath.row])
+        cell.textLabel?.text = groupName[indexPath.row]
+        cell.detailTextLabel?.text = time[indexPath.row]
 
         return cell
     }
-
+    
 
     /*
     // Override to support conditional editing of the table view.
