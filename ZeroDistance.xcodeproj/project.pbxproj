@@ -35,6 +35,7 @@
 		7E41B9E01CFF43280077B28A /* Ding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E41B9DF1CFF43280077B28A /* Ding.storyboard */; };
 		7E894FED1CFEFADE00D5EA17 /* Feeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */; };
 		7E894FEF1CFEFB0300D5EA17 /* ZDFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */; };
+		7E9CD1111D1C239400D016CF /* ZDTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9CD1101D1C239400D016CF /* ZDTalkViewController.swift */; };
 		ACB9E6E6669E5330F3A83347 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD12CEBD3ADCD6C651C84AAE /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		7E41B9DF1CFF43280077B28A /* Ding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ding.storyboard; sourceTree = "<group>"; };
 		7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feeds.storyboard; sourceTree = "<group>"; };
 		7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDFeedsViewController.swift; sourceTree = "<group>"; };
+		7E9CD1101D1C239400D016CF /* ZDTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTalkViewController.swift; sourceTree = "<group>"; };
 		CD12CEBD3ADCD6C651C84AAE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -227,6 +229,7 @@
 			children = (
 				7E259E6E1D09A821006F66A6 /* PTT.storyboard */,
 				7E259E711D09A842006F66A6 /* ZDPTTViewController.swift */,
+				7E9CD1101D1C239400D016CF /* ZDTalkViewController.swift */,
 			);
 			path = PTT;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9CD1111D1C239400D016CF /* ZDTalkViewController.swift in Sources */,
 				7E259E671D09A330006F66A6 /* ChatContentViewController.swift in Sources */,
 				7E23E0F01CFA6D0D006BC0F1 /* ZDContactsViewController.swift in Sources */,
 				7E23E0F21CFA6D0D006BC0F1 /* ZDProfileViewController.swift in Sources */,

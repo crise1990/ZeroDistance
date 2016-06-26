@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MWPhotoBrowser
 class ZDFeedsViewController: UITableViewController {
     let dingStoryBoard:UIStoryboard! = UIStoryboard(name: "Ding", bundle: nil)
 
