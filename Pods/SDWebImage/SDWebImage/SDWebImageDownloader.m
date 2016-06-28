@@ -13,7 +13,11 @@
 static NSString *const kProgressCallbackKey = @"progress";
 static NSString *const kCompletedCallbackKey = @"completed";
 
+<<<<<<< Updated upstream
 @interface SDWebImageDownloader () <NSURLSessionTaskDelegate, NSURLSessionDataDelegate>
+=======
+@interface SDWebImageDownloader ()
+>>>>>>> Stashed changes
 
 @property (strong, nonatomic) NSOperationQueue *downloadQueue;
 @property (weak, nonatomic) NSOperation *lastAddedOperation;
@@ -23,9 +27,12 @@ static NSString *const kCompletedCallbackKey = @"completed";
 // This queue is used to serialize the handling of the network responses of all the download operation in a single queue
 @property (SDDispatchQueueSetterSementics, nonatomic) dispatch_queue_t barrierQueue;
 
+<<<<<<< Updated upstream
 // The session in which data tasks will run
 @property (strong, nonatomic) NSURLSession *session;
 
+=======
+>>>>>>> Stashed changes
 @end
 
 @implementation SDWebImageDownloader
@@ -77,6 +84,7 @@ static NSString *const kCompletedCallbackKey = @"completed";
 #endif
         _barrierQueue = dispatch_queue_create("com.hackemist.SDWebImageDownloaderBarrierQueue", DISPATCH_QUEUE_CONCURRENT);
         _downloadTimeout = 15.0;
+<<<<<<< Updated upstream
 
         NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
         sessionConfig.timeoutIntervalForRequest = _downloadTimeout;
@@ -89,14 +97,19 @@ static NSString *const kCompletedCallbackKey = @"completed";
         self.session = [NSURLSession sessionWithConfiguration:sessionConfig
                                                      delegate:self
                                                 delegateQueue:nil];
+=======
+>>>>>>> Stashed changes
     }
     return self;
 }
 
 - (void)dealloc {
+<<<<<<< Updated upstream
     [self.session invalidateAndCancel];
     self.session = nil;
 
+=======
+>>>>>>> Stashed changes
     [self.downloadQueue cancelAllOperations];
     SDDispatchQueueRelease(_barrierQueue);
 }
@@ -151,7 +164,10 @@ static NSString *const kCompletedCallbackKey = @"completed";
             request.allHTTPHeaderFields = wself.HTTPHeaders;
         }
         operation = [[wself.operationClass alloc] initWithRequest:request
+<<<<<<< Updated upstream
                                                         inSession:self.session
+=======
+>>>>>>> Stashed changes
                                                           options:options
                                                          progress:^(NSInteger receivedSize, NSInteger expectedSize) {
                                                              SDWebImageDownloader *sself = wself;
@@ -248,6 +264,7 @@ static NSString *const kCompletedCallbackKey = @"completed";
     [self.downloadQueue setSuspended:suspended];
 }
 
+<<<<<<< Updated upstream
 - (void)cancelAllDownloads {
     [self.downloadQueue cancelAllOperations];
 }
@@ -314,4 +331,6 @@ didReceiveResponse:(NSURLResponse *)response
     [dataOperation URLSession:session task:task didReceiveChallenge:challenge completionHandler:completionHandler];
 }
 
+=======
+>>>>>>> Stashed changes
 @end

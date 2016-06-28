@@ -15,7 +15,11 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageDownloaderOptions) {
     SDWebImageDownloaderProgressiveDownload = 1 << 1,
 
     /**
+<<<<<<< Updated upstream
      * By default, request prevent the use of NSURLCache. With this flag, NSURLCache
+=======
+     * By default, request prevent the of NSURLCache. With this flag, NSURLCache
+>>>>>>> Stashed changes
      * is used with default policies.
      */
     SDWebImageDownloaderUseNSURLCache = 1 << 2,
@@ -188,9 +192,12 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  */
 - (void)setSuspended:(BOOL)suspended;
 
+<<<<<<< Updated upstream
 /**
  * Cancels all download operations in the queue
  */
 - (void)cancelAllDownloads;
 
+=======
+>>>>>>> Stashed changes
 @end

@@ -32,9 +32,12 @@
 
         for (size_t i = 0; i < count; i++) {
             CGImageRef image = CGImageSourceCreateImageAtIndex(source, i, NULL);
+<<<<<<< Updated upstream
             if (!image) {
                 continue;
             }
+=======
+>>>>>>> Stashed changes
 
             duration += [self sd_frameDurationAtIndex:i source:source];
 

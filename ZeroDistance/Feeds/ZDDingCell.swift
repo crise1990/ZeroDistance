@@ -35,7 +35,7 @@ class ZDDingCell: UITableViewCell {
                     let row:CGFloat = CGFloat(i / 3)
                     let imageView = UIImageView(frame: CGRectMake(col * (imageWH + margin), row * (imageWH + margin), imageWH, imageWH))
                     
-                    //                imageView.backgroundColor = UIColor.blueColor()
+                    //mageView.backgroundColor = UIColor.blueColor()
                     imageView.image = UIImage(named: images![i])
                     imagesView.addSubview(imageView)
                     

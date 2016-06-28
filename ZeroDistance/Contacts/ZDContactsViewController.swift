@@ -96,10 +96,7 @@ class ZDContactsViewController: UITableViewController, UISearchBarDelegate, UISe
             }
             
         }
-        
-        
-        
-        
+
     }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if shouldShowSearchResults {

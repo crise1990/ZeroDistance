@@ -126,7 +126,11 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
             _fileManager = [NSFileManager new];
         });
 
+<<<<<<< Updated upstream
 #if TARGET_OS_IOS
+=======
+#if TARGET_OS_IPHONE
+>>>>>>> Stashed changes
         // Subscribe to app events
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(clearMemory)
@@ -241,7 +245,27 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
 #endif
             }
 
+<<<<<<< Updated upstream
             [self storeImageDataToDisk:data forKey:key];
+=======
+            if (data) {
+                if (![_fileManager fileExistsAtPath:_diskCachePath]) {
+                    [_fileManager createDirectoryAtPath:_diskCachePath withIntermediateDirectories:YES attributes:nil error:NULL];
+                }
+
+                // get cache Path for image key
+                NSString *cachePathForKey = [self defaultCachePathForKey:key];
+                // transform to NSUrl
+                NSURL *fileURL = [NSURL fileURLWithPath:cachePathForKey];
+
+                [_fileManager createFileAtPath:cachePathForKey contents:data attributes:nil];
+
+                // disable iCloud backup
+                if (self.shouldDisableiCloud) {
+                    [fileURL setResourceValue:[NSNumber numberWithBool:YES] forKey:NSURLIsExcludedFromBackupKey error:nil];
+                }
+            }
+>>>>>>> Stashed changes
         });
     }
 }
@@ -254,6 +278,7 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
     [self storeImage:image recalculateFromImage:YES imageData:nil forKey:key toDisk:toDisk];
 }
 
+<<<<<<< Updated upstream
 - (void)storeImageDataToDisk:(NSData *)imageData forKey:(NSString *)key {
     
     if (!imageData) {
@@ -277,6 +302,8 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
     }
 }
 
+=======
+>>>>>>> Stashed changes
 - (BOOL)diskImageExistsWithKey:(NSString *)key {
     BOOL exists = NO;
     

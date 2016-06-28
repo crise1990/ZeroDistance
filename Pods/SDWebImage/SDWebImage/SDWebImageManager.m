@@ -37,6 +37,7 @@
     return instance;
 }
 
+<<<<<<< Updated upstream
 - (instancetype)init {
     SDImageCache *cache = [SDImageCache sharedImageCache];
     SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
@@ -47,12 +48,19 @@
     if ((self = [super init])) {
         _imageCache = cache;
         _imageDownloader = downloader;
+=======
+- (id)init {
+    if ((self = [super init])) {
+        _imageCache = [self createCache];
+        _imageDownloader = [SDWebImageDownloader sharedDownloader];
+>>>>>>> Stashed changes
         _failedURLs = [NSMutableSet new];
         _runningOperations = [NSMutableArray new];
     }
     return self;
 }
 
+<<<<<<< Updated upstream
 - (NSString *)cacheKeyForURL:(NSURL *)url {
     if (!url) {
         return @"";
@@ -61,6 +69,17 @@
     if (self.cacheKeyFilter) {
         return self.cacheKeyFilter(url);
     } else {
+=======
+- (SDImageCache *)createCache {
+    return [SDImageCache sharedImageCache];
+}
+
+- (NSString *)cacheKeyForURL:(NSURL *)url {
+    if (self.cacheKeyFilter) {
+        return self.cacheKeyFilter(url);
+    }
+    else {
+>>>>>>> Stashed changes
         return [url absoluteString];
     }
 }
