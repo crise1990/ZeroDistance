@@ -15,9 +15,11 @@ class ZDContactsCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        if (avatarImageView != nil) {
+            avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2.0
+            avatarImageView.layer.masksToBounds = true
+        }
         
-        avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2.0
-        avatarImageView.layer.masksToBounds = true
 //        avatarImageView.layer.borderWidth = 1.5
 //        avatarImageView.layer.borderColor = UIColor.whiteColor().CGColor
         

@@ -10,17 +10,39 @@
 		0463DF291CF1F8B000741222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463DF281CF1F8B000741222 /* AppDelegate.swift */; };
 		0463DF2E1CF1F8B000741222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463DF2C1CF1F8B000741222 /* Main.storyboard */; };
 		0463DF301CF1F8B000741222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0463DF2F1CF1F8B000741222 /* Assets.xcassets */; };
-		0463DF331CF1F8B000741222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463DF311CF1F8B000741222 /* LaunchScreen.storyboard */; };
 		0463DF3E1CF1F8B000741222 /* ZeroDistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463DF3D1CF1F8B000741222 /* ZeroDistanceTests.swift */; };
 		0463DF491CF1F8B000741222 /* ZeroDistanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463DF481CF1F8B000741222 /* ZeroDistanceUITests.swift */; };
+		04BC49801D1C2AEE009BECF3 /* ZDMomentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC497F1D1C2AEE009BECF3 /* ZDMomentsViewController.swift */; };
+		04FCC15E1D1958090063621B /* ZDBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCC15D1D1958090063621B /* ZDBoardViewController.swift */; };
+		7E0C1BAB1D006C420076194A /* ZDDingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C1BAA1D006C420076194A /* ZDDingViewController.swift */; };
+		7E0C1BAD1D0077FF0076194A /* ZDDingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C1BAC1D0077FF0076194A /* ZDDingCell.swift */; };
 		7E23E0EF1CFA6D0D006BC0F1 /* ZDContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0E81CFA6D0D006BC0F1 /* ZDContactsCell.swift */; };
 		7E23E0F01CFA6D0D006BC0F1 /* ZDContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0E91CFA6D0D006BC0F1 /* ZDContactsViewController.swift */; };
 		7E23E0F11CFA6D0D006BC0F1 /* ZDContactUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0EA1CFA6D0D006BC0F1 /* ZDContactUIButton.swift */; };
 		7E23E0F21CFA6D0D006BC0F1 /* ZDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0EC1CFA6D0D006BC0F1 /* ZDProfileViewController.swift */; };
 		7E23E0F31CFA6D0D006BC0F1 /* ZDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0EE1CFA6D0D006BC0F1 /* ZDTabBarController.swift */; };
 		7E23E0F81CFA6E11006BC0F1 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0F71CFA6E11006BC0F1 /* Contacts.storyboard */; };
-		7E23E0FB1CFA6EA2006BC0F1 /* Feeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */; };
 		7E23E0FD1CFA6EE2006BC0F1 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E23E0FC1CFA6EE2006BC0F1 /* Me.storyboard */; };
+		7E259E5C1D098410006F66A6 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E259E5B1D098410006F66A6 /* Chat.storyboard */; };
+		7E259E5E1D098758006F66A6 /* ZDChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E259E5D1D098758006F66A6 /* ZDChatViewController.swift */; };
+		7E259E601D09882E006F66A6 /* ZDChatContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E259E5F1D09882E006F66A6 /* ZDChatContactCell.swift */; };
+		7E259E651D09A330006F66A6 /* ChatContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E259E611D09A330006F66A6 /* ChatContent.swift */; };
+		7E259E661D09A330006F66A6 /* ChatContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E259E621D09A330006F66A6 /* ChatContentCell.swift */; };
+		7E259E671D09A330006F66A6 /* ChatContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E259E631D09A330006F66A6 /* ChatContentViewController.swift */; };
+		7E259E681D09A330006F66A6 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E259E641D09A330006F66A6 /* messages.plist */; };
+		7E259E6C1D09A564006F66A6 /* ChatContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E259E6B1D09A564006F66A6 /* ChatContent.storyboard */; };
+		7E259E701D09A821006F66A6 /* PTT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E259E6E1D09A821006F66A6 /* PTT.storyboard */; };
+		7E259E721D09A842006F66A6 /* ZDPTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E259E711D09A842006F66A6 /* ZDPTTViewController.swift */; };
+		7E3CD6E51D09017A00212E91 /* ZDHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CD6E41D09017A00212E91 /* ZDHeadCell.swift */; };
+		7E41B9E01CFF43280077B28A /* Ding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E41B9DF1CFF43280077B28A /* Ding.storyboard */; };
+		7E894FED1CFEFADE00D5EA17 /* Feeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */; };
+		7E894FEF1CFEFB0300D5EA17 /* ZDFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */; };
+<<<<<<< Updated upstream
+		7E9CD1111D1C239400D016CF /* ZDTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9CD1101D1C239400D016CF /* ZDTalkViewController.swift */; };
+		ACB9E6E6669E5330F3A83347 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD12CEBD3ADCD6C651C84AAE /* Pods.framework */; };
+=======
+		A88C85FA082DD2C705BEC204 /* Pods_ZeroDistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B223A34667DE54CE2B0DDA /* Pods_ZeroDistance.framework */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +67,6 @@
 		0463DF281CF1F8B000741222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0463DF2D1CF1F8B000741222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0463DF2F1CF1F8B000741222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0463DF321CF1F8B000741222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0463DF341CF1F8B000741222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0463DF391CF1F8B000741222 /* ZeroDistanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroDistanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463DF3D1CF1F8B000741222 /* ZeroDistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroDistanceTests.swift; sourceTree = "<group>"; };
@@ -53,14 +74,39 @@
 		0463DF441CF1F8B000741222 /* ZeroDistanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroDistanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463DF481CF1F8B000741222 /* ZeroDistanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroDistanceUITests.swift; sourceTree = "<group>"; };
 		0463DF4A1CF1F8B000741222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BC497F1D1C2AEE009BECF3 /* ZDMomentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMomentsViewController.swift; sourceTree = "<group>"; };
+		04FCC15D1D1958090063621B /* ZDBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBoardViewController.swift; sourceTree = "<group>"; };
+		7E0C1BAA1D006C420076194A /* ZDDingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDingViewController.swift; sourceTree = "<group>"; };
+		7E0C1BAC1D0077FF0076194A /* ZDDingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDingCell.swift; sourceTree = "<group>"; };
 		7E23E0E81CFA6D0D006BC0F1 /* ZDContactsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactsCell.swift; sourceTree = "<group>"; };
 		7E23E0E91CFA6D0D006BC0F1 /* ZDContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactsViewController.swift; sourceTree = "<group>"; };
 		7E23E0EA1CFA6D0D006BC0F1 /* ZDContactUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactUIButton.swift; sourceTree = "<group>"; };
 		7E23E0EC1CFA6D0D006BC0F1 /* ZDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDProfileViewController.swift; sourceTree = "<group>"; };
 		7E23E0EE1CFA6D0D006BC0F1 /* ZDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTabBarController.swift; sourceTree = "<group>"; };
 		7E23E0F71CFA6E11006BC0F1 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Contacts.storyboard; path = ZeroDistance/Contacts.storyboard; sourceTree = SOURCE_ROOT; };
-		7E23E0FA1CFA6EA2006BC0F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feeds.storyboard; sourceTree = "<group>"; };
 		7E23E0FC1CFA6EE2006BC0F1 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Me.storyboard; path = ../Me.storyboard; sourceTree = "<group>"; };
+		7E259E5B1D098410006F66A6 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		7E259E5D1D098758006F66A6 /* ZDChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDChatViewController.swift; sourceTree = "<group>"; };
+		7E259E5F1D09882E006F66A6 /* ZDChatContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDChatContactCell.swift; sourceTree = "<group>"; };
+		7E259E611D09A330006F66A6 /* ChatContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContent.swift; sourceTree = "<group>"; };
+		7E259E621D09A330006F66A6 /* ChatContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentCell.swift; sourceTree = "<group>"; };
+		7E259E631D09A330006F66A6 /* ChatContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentViewController.swift; sourceTree = "<group>"; };
+		7E259E641D09A330006F66A6 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
+		7E259E6B1D09A564006F66A6 /* ChatContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatContent.storyboard; sourceTree = "<group>"; };
+		7E259E6F1D09A821006F66A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PTT.storyboard; sourceTree = "<group>"; };
+		7E259E711D09A842006F66A6 /* ZDPTTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDPTTViewController.swift; sourceTree = "<group>"; };
+		7E3CD6E41D09017A00212E91 /* ZDHeadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDHeadCell.swift; sourceTree = "<group>"; };
+		7E41B9DF1CFF43280077B28A /* Ding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ding.storyboard; sourceTree = "<group>"; };
+		7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feeds.storyboard; sourceTree = "<group>"; };
+		7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDFeedsViewController.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+		7E9CD1101D1C239400D016CF /* ZDTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTalkViewController.swift; sourceTree = "<group>"; };
+=======
+		A035196607D0D9CC70182876 /* Pods-ZeroDistance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroDistance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZeroDistance/Pods-ZeroDistance.debug.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
+		CD12CEBD3ADCD6C651C84AAE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B223A34667DE54CE2B0DDA /* Pods_ZeroDistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeroDistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB40532E0CD192AEA2627778 /* Pods-ZeroDistance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeroDistance.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZeroDistance/Pods-ZeroDistance.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88C85FA082DD2C705BEC204 /* Pods_ZeroDistance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +142,8 @@
 				0463DF3C1CF1F8B000741222 /* ZeroDistanceTests */,
 				0463DF471CF1F8B000741222 /* ZeroDistanceUITests */,
 				0463DF261CF1F8B000741222 /* Products */,
+				F504A1C407B22328A7A411F1 /* Frameworks */,
+				4CAF2ECBC6AA43E9E389B8A8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,14 +160,15 @@
 		0463DF271CF1F8B000741222 /* ZeroDistance */ = {
 			isa = PBXGroup;
 			children = (
+				7E259E6D1D09A7C7006F66A6 /* PTT */,
+				7E259E581D09838E006F66A6 /* Chat */,
+				7E894FEB1CFEFADE00D5EA17 /* Feeds */,
 				7E23E0E71CFA6D0D006BC0F1 /* Contacts */,
 				7E23E0EB1CFA6D0D006BC0F1 /* Profile */,
 				7E23E0ED1CFA6D0D006BC0F1 /* TabBarController */,
 				0463DF281CF1F8B000741222 /* AppDelegate.swift */,
 				0463DF2C1CF1F8B000741222 /* Main.storyboard */,
-				7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */,
 				0463DF2F1CF1F8B000741222 /* Assets.xcassets */,
-				0463DF311CF1F8B000741222 /* LaunchScreen.storyboard */,
 				0463DF341CF1F8B000741222 /* Info.plist */,
 			);
 			path = ZeroDistance;
@@ -142,6 +192,40 @@
 			path = ZeroDistanceUITests;
 			sourceTree = "<group>";
 		};
+		04BC49811D1C2F4B009BECF3 /* Ding */ = {
+			isa = PBXGroup;
+			children = (
+				7E0C1BAA1D006C420076194A /* ZDDingViewController.swift */,
+				7E0C1BAC1D0077FF0076194A /* ZDDingCell.swift */,
+			);
+			name = Ding;
+			sourceTree = "<group>";
+		};
+		04BC49821D1C2F54009BECF3 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				04FCC15D1D1958090063621B /* ZDBoardViewController.swift */,
+			);
+			name = Board;
+			sourceTree = "<group>";
+		};
+		04BC49831D1C2F62009BECF3 /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				04BC497F1D1C2AEE009BECF3 /* ZDMomentsViewController.swift */,
+			);
+			name = Moments;
+			sourceTree = "<group>";
+		};
+		4CAF2ECBC6AA43E9E389B8A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A035196607D0D9CC70182876 /* Pods-ZeroDistance.debug.xcconfig */,
+				FB40532E0CD192AEA2627778 /* Pods-ZeroDistance.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7E23E0E71CFA6D0D006BC0F1 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +233,7 @@
 				7E23E0E81CFA6D0D006BC0F1 /* ZDContactsCell.swift */,
 				7E23E0E91CFA6D0D006BC0F1 /* ZDContactsViewController.swift */,
 				7E23E0EA1CFA6D0D006BC0F1 /* ZDContactUIButton.swift */,
+				7E3CD6E41D09017A00212E91 /* ZDHeadCell.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -170,6 +255,53 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
+		7E259E581D09838E006F66A6 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7E259E5B1D098410006F66A6 /* Chat.storyboard */,
+				7E259E6B1D09A564006F66A6 /* ChatContent.storyboard */,
+				7E259E5D1D098758006F66A6 /* ZDChatViewController.swift */,
+				7E259E5F1D09882E006F66A6 /* ZDChatContactCell.swift */,
+				7E259E611D09A330006F66A6 /* ChatContent.swift */,
+				7E259E621D09A330006F66A6 /* ChatContentCell.swift */,
+				7E259E631D09A330006F66A6 /* ChatContentViewController.swift */,
+				7E259E641D09A330006F66A6 /* messages.plist */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		7E259E6D1D09A7C7006F66A6 /* PTT */ = {
+			isa = PBXGroup;
+			children = (
+				7E259E6E1D09A821006F66A6 /* PTT.storyboard */,
+				7E259E711D09A842006F66A6 /* ZDPTTViewController.swift */,
+				7E9CD1101D1C239400D016CF /* ZDTalkViewController.swift */,
+			);
+			path = PTT;
+			sourceTree = "<group>";
+		};
+		7E894FEB1CFEFADE00D5EA17 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */,
+				7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */,
+				7E41B9DF1CFF43280077B28A /* Ding.storyboard */,
+				04BC49831D1C2F62009BECF3 /* Moments */,
+				04BC49821D1C2F54009BECF3 /* Board */,
+				04BC49811D1C2F4B009BECF3 /* Ding */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		F504A1C407B22328A7A411F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD12CEBD3ADCD6C651C84AAE /* Pods.framework */,
+				F7B223A34667DE54CE2B0DDA /* Pods_ZeroDistance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +309,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0463DF4D1CF1F8B000741222 /* Build configuration list for PBXNativeTarget "ZeroDistance" */;
 			buildPhases = (
+				C48579635AD9FA0C326EEF6B /* [CP] Check Pods Manifest.lock */,
 				0463DF211CF1F8B000741222 /* Sources */,
 				0463DF221CF1F8B000741222 /* Frameworks */,
 				0463DF231CF1F8B000741222 /* Resources */,
+				786A2F90A040622CA926D298 /* [CP] Embed Pods Frameworks */,
+				CBE40B5E6D20BD33D9B893DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,10 +412,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E23E0FB1CFA6EA2006BC0F1 /* Feeds.storyboard in Resources */,
-				0463DF331CF1F8B000741222 /* LaunchScreen.storyboard in Resources */,
+				7E259E681D09A330006F66A6 /* messages.plist in Resources */,
+				7E259E5C1D098410006F66A6 /* Chat.storyboard in Resources */,
+				7E894FED1CFEFADE00D5EA17 /* Feeds.storyboard in Resources */,
 				7E23E0FD1CFA6EE2006BC0F1 /* Me.storyboard in Resources */,
+				7E259E6C1D09A564006F66A6 /* ChatContent.storyboard in Resources */,
+				7E41B9E01CFF43280077B28A /* Ding.storyboard in Resources */,
 				7E23E0F81CFA6E11006BC0F1 /* Contacts.storyboard in Resources */,
+				7E259E701D09A821006F66A6 /* PTT.storyboard in Resources */,
 				0463DF301CF1F8B000741222 /* Assets.xcassets in Resources */,
 				0463DF2E1CF1F8B000741222 /* Main.storyboard in Resources */,
 			);
@@ -302,17 +441,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		786A2F90A040622CA926D298 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZeroDistance/Pods-ZeroDistance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48579635AD9FA0C326EEF6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE40B5E6D20BD33D9B893DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZeroDistance/Pods-ZeroDistance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0463DF211CF1F8B000741222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9CD1111D1C239400D016CF /* ZDTalkViewController.swift in Sources */,
+				7E259E671D09A330006F66A6 /* ChatContentViewController.swift in Sources */,
 				7E23E0F01CFA6D0D006BC0F1 /* ZDContactsViewController.swift in Sources */,
 				7E23E0F21CFA6D0D006BC0F1 /* ZDProfileViewController.swift in Sources */,
+				7E0C1BAD1D0077FF0076194A /* ZDDingCell.swift in Sources */,
+				04FCC15E1D1958090063621B /* ZDBoardViewController.swift in Sources */,
 				7E23E0EF1CFA6D0D006BC0F1 /* ZDContactsCell.swift in Sources */,
+				7E259E601D09882E006F66A6 /* ZDChatContactCell.swift in Sources */,
 				7E23E0F31CFA6D0D006BC0F1 /* ZDTabBarController.swift in Sources */,
+				04BC49801D1C2AEE009BECF3 /* ZDMomentsViewController.swift in Sources */,
+				7E259E5E1D098758006F66A6 /* ZDChatViewController.swift in Sources */,
+				7E0C1BAB1D006C420076194A /* ZDDingViewController.swift in Sources */,
+				7E259E721D09A842006F66A6 /* ZDPTTViewController.swift in Sources */,
+				7E259E651D09A330006F66A6 /* ChatContent.swift in Sources */,
+				7E259E661D09A330006F66A6 /* ChatContentCell.swift in Sources */,
+				7E894FEF1CFEFB0300D5EA17 /* ZDFeedsViewController.swift in Sources */,
 				7E23E0F11CFA6D0D006BC0F1 /* ZDContactUIButton.swift in Sources */,
 				0463DF291CF1F8B000741222 /* AppDelegate.swift in Sources */,
+				7E3CD6E51D09017A00212E91 /* ZDHeadCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,20 +556,13 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0463DF311CF1F8B000741222 /* LaunchScreen.storyboard */ = {
+		7E259E6E1D09A821006F66A6 /* PTT.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0463DF321CF1F8B000741222 /* Base */,
+				7E259E6F1D09A821006F66A6 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		7E23E0F91CFA6EA2006BC0F1 /* Feeds.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E23E0FA1CFA6EA2006BC0F1 /* Base */,
-			);
-			name = Feeds.storyboard;
+			name = PTT.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -460,11 +653,14 @@
 		};
 		0463DF4E1CF1F8B000741222 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A035196607D0D9CC70182876 /* Pods-ZeroDistance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ZeroDistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crise.ZeroDistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,11 +670,14 @@
 		};
 		0463DF4F1CF1F8B000741222 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB40532E0CD192AEA2627778 /* Pods-ZeroDistance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ZeroDistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crise.ZeroDistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
