@@ -7,9 +7,10 @@
 //
 
 import UIKit
-import MWPhotoBrowser
+
 class ZDFeedsViewController: UITableViewController {
     let dingStoryBoard:UIStoryboard! = UIStoryboard(name: "Ding", bundle: nil)
+//    let boardListStoryBoard:UIStoryboard! = UIStoryboard(name: "Board", bundle: nil)
 
 
     override func viewDidLoad() {
@@ -28,8 +29,32 @@ class ZDFeedsViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let vc:UITableViewController = dingStoryBoard.instantiateViewControllerWithIdentifier("DingTableView") as! UITableViewController
-        navigationController?.pushViewController(vc, animated: true)
+        switch indexPath.section{
+        case 0:
+            switch indexPath.row {
+            case 0:
+                let vc:UITableViewController = dingStoryBoard.instantiateViewControllerWithIdentifier("DingTableView") as! UITableViewController
+                navigationController?.pushViewController(vc, animated: true)
+            case 1:
+                let vc:UITableViewController = dingStoryBoard.instantiateViewControllerWithIdentifier("BoardListView") as! UITableViewController
+                navigationController?.pushViewController(vc, animated: true)
+
+            default:
+                break
+            }
+        case 1:
+            switch indexPath.row {
+            case 0:
+                let vc:UITableViewController = dingStoryBoard.instantiateViewControllerWithIdentifier("MomentsViewController") as! UITableViewController
+                navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
+            
+            
+        default:
+            break
+        }
       
         
         

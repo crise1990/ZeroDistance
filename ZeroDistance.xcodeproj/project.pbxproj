@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044E5D3D1D23EC4900643C1D /* ZDFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E5D3C1D23EC4900643C1D /* ZDFeedsViewController.swift */; };
+		044E5D3F1D23EC7E00643C1D /* Ding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044E5D3E1D23EC7E00643C1D /* Ding.storyboard */; };
+		044E5D411D23F02400643C1D /* ZDBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E5D401D23F02400643C1D /* ZDBoardViewController.swift */; };
+		044E5D431D23F66300643C1D /* ZDBoardContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E5D421D23F66300643C1D /* ZDBoardContentViewController.swift */; };
+		044E5D451D23F92300643C1D /* ZDBoardContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E5D441D23F92300643C1D /* ZDBoardContentCell.swift */; };
 		0463DF291CF1F8B000741222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463DF281CF1F8B000741222 /* AppDelegate.swift */; };
 		0463DF2E1CF1F8B000741222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463DF2C1CF1F8B000741222 /* Main.storyboard */; };
 		0463DF301CF1F8B000741222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0463DF2F1CF1F8B000741222 /* Assets.xcassets */; };
@@ -32,9 +37,7 @@
 		7E259E701D09A821006F66A6 /* PTT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E259E6E1D09A821006F66A6 /* PTT.storyboard */; };
 		7E259E721D09A842006F66A6 /* ZDPTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E259E711D09A842006F66A6 /* ZDPTTViewController.swift */; };
 		7E3CD6E51D09017A00212E91 /* ZDHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CD6E41D09017A00212E91 /* ZDHeadCell.swift */; };
-		7E41B9E01CFF43280077B28A /* Ding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E41B9DF1CFF43280077B28A /* Ding.storyboard */; };
 		7E894FED1CFEFADE00D5EA17 /* Feeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */; };
-		7E894FEF1CFEFB0300D5EA17 /* ZDFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */; };
 		7E9CD1111D1C239400D016CF /* ZDTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9CD1101D1C239400D016CF /* ZDTalkViewController.swift */; };
 		ACB9E6E6669E5330F3A83347 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD12CEBD3ADCD6C651C84AAE /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +60,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044E5D3C1D23EC4900643C1D /* ZDFeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDFeedsViewController.swift; sourceTree = "<group>"; };
+		044E5D3E1D23EC7E00643C1D /* Ding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ding.storyboard; sourceTree = "<group>"; };
+		044E5D401D23F02400643C1D /* ZDBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBoardViewController.swift; sourceTree = "<group>"; };
+		044E5D421D23F66300643C1D /* ZDBoardContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBoardContentViewController.swift; sourceTree = "<group>"; };
+		044E5D441D23F92300643C1D /* ZDBoardContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBoardContentCell.swift; sourceTree = "<group>"; };
 		0463DF251CF1F8B000741222 /* ZeroDistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroDistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463DF281CF1F8B000741222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0463DF2D1CF1F8B000741222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,9 +98,7 @@
 		7E259E6F1D09A821006F66A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PTT.storyboard; sourceTree = "<group>"; };
 		7E259E711D09A842006F66A6 /* ZDPTTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDPTTViewController.swift; sourceTree = "<group>"; };
 		7E3CD6E41D09017A00212E91 /* ZDHeadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDHeadCell.swift; sourceTree = "<group>"; };
-		7E41B9DF1CFF43280077B28A /* Ding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ding.storyboard; sourceTree = "<group>"; };
 		7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feeds.storyboard; sourceTree = "<group>"; };
-		7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDFeedsViewController.swift; sourceTree = "<group>"; };
 		7E9CD1101D1C239400D016CF /* ZDTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTalkViewController.swift; sourceTree = "<group>"; };
 		CD12CEBD3ADCD6C651C84AAE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -238,8 +244,11 @@
 			isa = PBXGroup;
 			children = (
 				7E894FEC1CFEFADE00D5EA17 /* Feeds.storyboard */,
-				7E41B9DF1CFF43280077B28A /* Ding.storyboard */,
-				7E894FEE1CFEFB0300D5EA17 /* ZDFeedsViewController.swift */,
+				044E5D3E1D23EC7E00643C1D /* Ding.storyboard */,
+				044E5D441D23F92300643C1D /* ZDBoardContentCell.swift */,
+				044E5D421D23F66300643C1D /* ZDBoardContentViewController.swift */,
+				044E5D401D23F02400643C1D /* ZDBoardViewController.swift */,
+				044E5D3C1D23EC4900643C1D /* ZDFeedsViewController.swift */,
 				7E0C1BAA1D006C420076194A /* ZDDingViewController.swift */,
 				7E0C1BAC1D0077FF0076194A /* ZDDingCell.swift */,
 			);
@@ -378,8 +387,8 @@
 				7E894FED1CFEFADE00D5EA17 /* Feeds.storyboard in Resources */,
 				7E23E0FD1CFA6EE2006BC0F1 /* Me.storyboard in Resources */,
 				7E259E6C1D09A564006F66A6 /* ChatContent.storyboard in Resources */,
-				7E41B9E01CFF43280077B28A /* Ding.storyboard in Resources */,
 				7E23E0F81CFA6E11006BC0F1 /* Contacts.storyboard in Resources */,
+				044E5D3F1D23EC7E00643C1D /* Ding.storyboard in Resources */,
 				7E259E701D09A821006F66A6 /* PTT.storyboard in Resources */,
 				0463DF301CF1F8B000741222 /* Assets.xcassets in Resources */,
 				0463DF2E1CF1F8B000741222 /* Main.storyboard in Resources */,
@@ -457,6 +466,7 @@
 			files = (
 				7E9CD1111D1C239400D016CF /* ZDTalkViewController.swift in Sources */,
 				7E259E671D09A330006F66A6 /* ChatContentViewController.swift in Sources */,
+				044E5D3D1D23EC4900643C1D /* ZDFeedsViewController.swift in Sources */,
 				7E23E0F01CFA6D0D006BC0F1 /* ZDContactsViewController.swift in Sources */,
 				7E23E0F21CFA6D0D006BC0F1 /* ZDProfileViewController.swift in Sources */,
 				7E0C1BAD1D0077FF0076194A /* ZDDingCell.swift in Sources */,
@@ -464,14 +474,16 @@
 				7E259E601D09882E006F66A6 /* ZDChatContactCell.swift in Sources */,
 				7E23E0F31CFA6D0D006BC0F1 /* ZDTabBarController.swift in Sources */,
 				7E259E5E1D098758006F66A6 /* ZDChatViewController.swift in Sources */,
+				044E5D431D23F66300643C1D /* ZDBoardContentViewController.swift in Sources */,
 				7E0C1BAB1D006C420076194A /* ZDDingViewController.swift in Sources */,
+				044E5D451D23F92300643C1D /* ZDBoardContentCell.swift in Sources */,
 				7E259E721D09A842006F66A6 /* ZDPTTViewController.swift in Sources */,
 				7E259E651D09A330006F66A6 /* ChatContent.swift in Sources */,
 				7E259E661D09A330006F66A6 /* ChatContentCell.swift in Sources */,
-				7E894FEF1CFEFB0300D5EA17 /* ZDFeedsViewController.swift in Sources */,
 				7E23E0F11CFA6D0D006BC0F1 /* ZDContactUIButton.swift in Sources */,
 				0463DF291CF1F8B000741222 /* AppDelegate.swift in Sources */,
 				7E3CD6E51D09017A00212E91 /* ZDHeadCell.swift in Sources */,
+				044E5D411D23F02400643C1D /* ZDBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
