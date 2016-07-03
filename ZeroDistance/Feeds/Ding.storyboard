@@ -288,7 +288,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="Kvk-EO-4xm" kind="show" identifier="toBoardContentView" id="wPe-Um-S4R"/>
+                        <segue destination="Kvk-EO-4xm" kind="show" identifier="showBoardContentView" id="wPe-Um-S4R"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lmg-PR-6To" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -298,27 +298,43 @@
         <!--Board Content View Controller-->
         <scene sceneID="vWq-Rd-cps">
             <objects>
-                <tableViewController id="Kvk-EO-4xm" customClass="ZDBoardContentViewController" customModule="ZeroDistance" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Wi-9g-MY3">
+                <tableViewController storyboardIdentifier="ZDBoardContent" id="Kvk-EO-4xm" customClass="ZDBoardContentViewController" customModule="ZeroDistance" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="335" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Wi-9g-MY3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZDBoardContentCell" rowHeight="180" id="F8K-wq-qQJ">
-                                <rect key="frame" x="0.0" y="28" width="600" height="180"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoardContentCell" rowHeight="335" id="F8K-wq-qQJ" customClass="ZDBoardContentCell" customModule="ZeroDistance" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="335"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F8K-wq-qQJ" id="Bso-Xf-loy">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="179"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="334"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grj-ap-Uwk">
-                                            <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grj-ap-Uwk">
+                                            <rect key="frame" x="10" y="10" width="510" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pcY-U0-ofy">
+                                            <rect key="frame" x="15" y="41" width="570" height="278"/>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pcY-U0-ofy" firstAttribute="top" secondItem="Grj-ap-Uwk" secondAttribute="bottom" constant="10" id="JAq-tq-3Um"/>
+                                        <constraint firstItem="Grj-ap-Uwk" firstAttribute="top" secondItem="Bso-Xf-loy" secondAttribute="top" constant="10" id="MKi-4U-rJw"/>
+                                        <constraint firstAttribute="trailing" secondItem="pcY-U0-ofy" secondAttribute="trailing" constant="15" id="a8l-th-kCq"/>
+                                        <constraint firstAttribute="trailing" secondItem="Grj-ap-Uwk" secondAttribute="trailing" constant="80" id="da1-OP-rDJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="pcY-U0-ofy" secondAttribute="bottom" constant="15" id="mvJ-pV-1pI"/>
+                                        <constraint firstItem="Grj-ap-Uwk" firstAttribute="leading" secondItem="Bso-Xf-loy" secondAttribute="leading" constant="10" id="pBk-wd-ST1"/>
+                                        <constraint firstItem="pcY-U0-ofy" firstAttribute="leading" secondItem="Bso-Xf-loy" secondAttribute="leading" constant="15" id="tRa-ca-kCM"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="boardContentImage" destination="pcY-U0-ofy" id="zVQ-ia-9Ct"/>
+                                    <outlet property="boardLabel" destination="Grj-ap-Uwk" id="DJr-V9-GYH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

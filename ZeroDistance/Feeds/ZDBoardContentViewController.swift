@@ -9,9 +9,18 @@
 import UIKit
 
 class ZDBoardContentViewController: UITableViewController {
+    
+    var dataContent = [
+        boardContent(boardText: "为啥不出字 i iiii 啊啊啊", boardImage: "pic01"),
+        boardContent(boardText: "sgagdgsdg", boardImage: "pic01"),
+        boardContent(boardText: "sgagdgsdg", boardImage: "pic01"),
+        boardContent(boardText: "sgagdgsdg", boardImage: "pic01"),
+        boardContent(boardText: "sgagdgsdg", boardImage: "pic01")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "公告板"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +38,33 @@ class ZDBoardContentViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return dataContent.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("BoardContentCell", forIndexPath: indexPath) as! ZDBoardContentCell
 
         // Configure the cell...
+        let content = dataContent[indexPath.row]
+        
+        cell.boardLabel.text = content.boardText
+        cell.boardContentImage.image = UIImage(named: content.boardImage)
+        
+        
 
         return cell
     }
-    */
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 230
+    }
+ 
 
     /*
     // Override to support conditional editing of the table view.

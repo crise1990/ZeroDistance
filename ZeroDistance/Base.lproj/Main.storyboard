@@ -1,14 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yzb-ze-ibq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1XO-j6-qI4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Log View Controller-->
+        <scene sceneID="YE0-nR-v1V">
+            <objects>
+                <viewController id="1XO-j6-qI4" customClass="ZDLogViewController" customModule="ZeroDistance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6tT-Eu-KYb"/>
+                        <viewControllerLayoutGuide type="bottom" id="7VS-DC-180"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tG4-LP-MH0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0i-yO-OaK">
+                                <rect key="frame" x="225" y="309" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DnI-SR-hS9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ga-Kk-7uC">
+                                <rect key="frame" x="265" y="383" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.48627450979999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="HaN-kq-p0W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logIn:" destination="1XO-j6-qI4" eventType="touchUpInside" id="fb6-WL-bmH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIz-Uc-thY">
+                                <rect key="frame" x="260" y="150" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4of-hD-l57"/>
+                                    <constraint firstAttribute="height" constant="80" id="Kzo-3x-4RR"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mbX-yC-hgo">
+                                <rect key="frame" x="225" y="250" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="iSD-jk-mPn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkg-9M-dja">
+                                <rect key="frame" x="265" y="430" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="mqn-tt-5um"/>
+                                </constraints>
+                                <state key="normal" title="注册"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M0i-yO-OaK" firstAttribute="top" secondItem="mbX-yC-hgo" secondAttribute="bottom" constant="29" id="2ng-Bk-awW"/>
+                            <constraint firstAttribute="bottom" secondItem="mbX-yC-hgo" secondAttribute="bottom" constant="320" id="42f-kj-Gk5"/>
+                            <constraint firstItem="M0i-yO-OaK" firstAttribute="centerX" secondItem="tG4-LP-MH0" secondAttribute="centerX" id="Hnr-zV-5Wu"/>
+                            <constraint firstItem="lkg-9M-dja" firstAttribute="top" secondItem="5Ga-Kk-7uC" secondAttribute="bottom" constant="17" id="PGJ-7M-kIW"/>
+                            <constraint firstItem="7VS-DC-180" firstAttribute="top" secondItem="lkg-9M-dja" secondAttribute="bottom" constant="140" id="ZUW-Di-CPW"/>
+                            <constraint firstItem="lkg-9M-dja" firstAttribute="centerX" secondItem="tG4-LP-MH0" secondAttribute="centerX" id="ecd-5h-eTt"/>
+                            <constraint firstItem="oIz-Uc-thY" firstAttribute="centerX" secondItem="tG4-LP-MH0" secondAttribute="centerX" id="lKd-VF-O75"/>
+                            <constraint firstItem="oIz-Uc-thY" firstAttribute="top" secondItem="6tT-Eu-KYb" secondAttribute="bottom" constant="130" id="raT-mZ-ngK"/>
+                            <constraint firstItem="5Ga-Kk-7uC" firstAttribute="centerX" secondItem="tG4-LP-MH0" secondAttribute="centerX" id="w5e-cD-iKB"/>
+                            <constraint firstItem="mbX-yC-hgo" firstAttribute="centerX" secondItem="tG4-LP-MH0" secondAttribute="centerX" id="xC3-eC-Egr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logAvatar" destination="oIz-Uc-thY" id="CHK-06-UbX"/>
+                        <outlet property="logBtn" destination="5Ga-Kk-7uC" id="gWR-9N-hnM"/>
+                        <outlet property="logCode" destination="M0i-yO-OaK" id="fyw-JR-doo"/>
+                        <outlet property="logNum" destination="mbX-yC-hgo" id="P4U-wO-Q9y"/>
+                        <outlet property="regBtn" destination="lkg-9M-dja" id="7A6-Bk-7To"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lrt-Vn-ghP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1682" y="1004"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lmE-4s-a0p">
             <objects>
-                <tabBarController id="yzb-ze-ibq" customClass="ZDTabBarController" customModule="ZeroDistance" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTab" id="yzb-ze-ibq" customClass="ZDTabBarController" customModule="ZeroDistance" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3i9-CX-DMX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

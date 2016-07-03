@@ -22,7 +22,7 @@ class ZDHeadCell: UITableViewCell {
         let margin: CGFloat = (UIScreen.mainScreen().bounds.width - 30 - 4 * buttonW) / 3
         for i in 0..<4 {
             let btn:ZDContactUIButton = ZDContactUIButton()
-            btn.frame = CGRectMake(CGFloat(i) * (buttonW + margin),0, buttonW, buttonH)
+            btn.frame = CGRectMake(CGFloat(i) * (buttonW + margin),10, buttonW, buttonH)
             btn.setImage(UIImage(named: imageName[i]), forState: UIControlState.Normal)
             btn.setTitle(titleName[i], forState: UIControlState.Normal)
             //            btn.backgroundColor = UIColor.redColor()

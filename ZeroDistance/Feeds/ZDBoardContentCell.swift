@@ -8,8 +8,17 @@
 
 import UIKit
 
-class ZDBoardContentCell: UITableViewCell {
+struct boardContent{
+    let boardText: String
+    let boardImage: String
+    
+}
 
+class ZDBoardContentCell: UITableViewCell {
+    
+
+    @IBOutlet weak var boardContentImage: UIImageView!
+    @IBOutlet weak var boardLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

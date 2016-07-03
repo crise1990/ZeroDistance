@@ -17,6 +17,7 @@ class ZDBoardViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 70.0
+        self.title = "公告板"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -55,6 +56,18 @@ class ZDBoardViewController: UITableViewController {
     }
 
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        let cell = tableView.cellForRowAtIndexPath(<#T##indexPath: NSIndexPath##NSIndexPath#>)
+        
+        performSegueWithIdentifier("showBoardContentView", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showBoardContentView"{
+        let vc = segue.destinationViewController as! ZDBoardContentViewController
+            vc.title = boardListName[tableView.indexPathForSelectedRow!.row]
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

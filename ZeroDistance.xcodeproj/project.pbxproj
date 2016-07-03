@@ -17,6 +17,7 @@
 		0463DF301CF1F8B000741222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0463DF2F1CF1F8B000741222 /* Assets.xcassets */; };
 		0463DF3E1CF1F8B000741222 /* ZeroDistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463DF3D1CF1F8B000741222 /* ZeroDistanceTests.swift */; };
 		0463DF491CF1F8B000741222 /* ZeroDistanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463DF481CF1F8B000741222 /* ZeroDistanceUITests.swift */; };
+		04E0ABD01D28EB35006E2355 /* ZDLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0ABCF1D28EB35006E2355 /* ZDLogViewController.swift */; };
 		7E0C1BAB1D006C420076194A /* ZDDingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C1BAA1D006C420076194A /* ZDDingViewController.swift */; };
 		7E0C1BAD1D0077FF0076194A /* ZDDingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C1BAC1D0077FF0076194A /* ZDDingCell.swift */; };
 		7E23E0EF1CFA6D0D006BC0F1 /* ZDContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23E0E81CFA6D0D006BC0F1 /* ZDContactsCell.swift */; };
@@ -76,6 +77,7 @@
 		0463DF441CF1F8B000741222 /* ZeroDistanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroDistanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463DF481CF1F8B000741222 /* ZeroDistanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroDistanceUITests.swift; sourceTree = "<group>"; };
 		0463DF4A1CF1F8B000741222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E0ABCF1D28EB35006E2355 /* ZDLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZDLogViewController.swift; path = Log/ZDLogViewController.swift; sourceTree = "<group>"; };
 		14FD27DC00A6C1AFA6E1CAAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1BCF4794ED1AA99AB5E1399E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7E0C1BAA1D006C420076194A /* ZDDingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDingViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		0463DF271CF1F8B000741222 /* ZeroDistance */ = {
 			isa = PBXGroup;
 			children = (
+				04E0ABD11D28EB43006E2355 /* Log */,
 				7E259E6D1D09A7C7006F66A6 /* PTT */,
 				7E259E581D09838E006F66A6 /* Chat */,
 				7E894FEB1CFEFADE00D5EA17 /* Feeds */,
@@ -184,6 +187,14 @@
 				0463DF4A1CF1F8B000741222 /* Info.plist */,
 			);
 			path = ZeroDistanceUITests;
+			sourceTree = "<group>";
+		};
+		04E0ABD11D28EB43006E2355 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				04E0ABCF1D28EB35006E2355 /* ZDLogViewController.swift */,
+			);
+			name = Log;
 			sourceTree = "<group>";
 		};
 		7E23E0E71CFA6D0D006BC0F1 /* Contacts */ = {
@@ -482,6 +493,7 @@
 				7E259E661D09A330006F66A6 /* ChatContentCell.swift in Sources */,
 				7E23E0F11CFA6D0D006BC0F1 /* ZDContactUIButton.swift in Sources */,
 				0463DF291CF1F8B000741222 /* AppDelegate.swift in Sources */,
+				04E0ABD01D28EB35006E2355 /* ZDLogViewController.swift in Sources */,
 				7E3CD6E51D09017A00212E91 /* ZDHeadCell.swift in Sources */,
 				044E5D411D23F02400643C1D /* ZDBoardViewController.swift in Sources */,
 			);

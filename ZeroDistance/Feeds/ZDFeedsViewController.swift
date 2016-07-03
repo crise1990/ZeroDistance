@@ -45,7 +45,10 @@ class ZDFeedsViewController: UITableViewController {
         case 1:
             switch indexPath.row {
             case 0:
-                let vc:UITableViewController = dingStoryBoard.instantiateViewControllerWithIdentifier("MomentsViewController") as! UITableViewController
+                let vc:UITableViewController = dingStoryBoard.instantiateViewControllerWithIdentifier("DingTableView") as! UITableViewController
+                navigationController?.pushViewController(vc, animated: true)
+            case 1:
+                let vc:UITableViewController = dingStoryBoard.instantiateViewControllerWithIdentifier("ZDBoardContent") as! UITableViewController
                 navigationController?.pushViewController(vc, animated: true)
             default:
                 break

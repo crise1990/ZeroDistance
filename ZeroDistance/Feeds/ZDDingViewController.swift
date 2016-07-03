@@ -32,6 +32,7 @@ class ZDDingViewController: UITableViewController {
         dingTabelView.estimatedRowHeight = 50.0
         dingTabelView.rowHeight = UITableViewAutomaticDimension
         tableView.separatorInset = UIEdgeInsetsMake(10,0, 10, 0);
+        self.title = "提醒事项"
 //        setTranslatesAutoresizingMaskIntoConstraints
 //        self.setTranslatesAutoresizingMaskIntoConstraints = false
         // Uncomment the following line to preserve selection between presentations
