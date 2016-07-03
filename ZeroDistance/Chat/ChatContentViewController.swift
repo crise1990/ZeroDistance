@@ -10,9 +10,16 @@ import UIKit
 
 class ChatContentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-   
+
+  
+    @IBOutlet weak var chatInputView: UIView!
+    @IBOutlet weak var button1Cons: NSLayoutConstraint!
+    
     @IBOutlet weak var messageTextField: UITextField!
     
+    @IBOutlet weak var button2Cons: NSLayoutConstraint!
+    @IBOutlet weak var button3Cons: NSLayoutConstraint!
+    @IBOutlet weak var button4Cons: UIView!
     lazy var chats: NSMutableArray = {
         let dictArray = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("messages", ofType: "plist")!)
         let chatArray1:NSMutableArray = NSMutableArray(capacity: dictArray!.count)
@@ -42,10 +49,28 @@ class ChatContentViewController: UIViewController, UITableViewDataSource, UITabl
         let btn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: nil, action: nil)
         navigationItem.rightBarButtonItem = btn
         //
+        let cons: CGFloat = (UIScreen.mainScreen().bounds.width - 34 * 5 - 44 * 2) / 4
+        button1Cons.constant = cons
+        button2Cons.constant = cons
+        button3Cons.constant = cons
+        button3Cons.constant = cons
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChatContentViewController.change(_:)), name: UIKeyboardWillChangeFrameNotification, object: nil)
         
         
     }
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
     
+    func change(note: NSNotification) {
+        let rect: CGRect = (note.userInfo![UIKeyboardFrameEndUserInfoKey]?.CGRectValue())!
+        let duration:Double = (note.userInfo![UIKeyboardAnimationDurationUserInfoKey]?.doubleValue)!
+        UIView.animateWithDuration(duration) { 
+            let yy = UIScreen.mainScreen().bounds.size.height - rect.origin.y
+            self.view.transform = CGAffineTransformMakeTranslation(0, -yy)
+        }
+    }
 
 
     // MARK UITableViewDataSource
