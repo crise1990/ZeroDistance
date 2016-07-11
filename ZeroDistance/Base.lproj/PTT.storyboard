@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i6f-Q6-5Dz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i6f-Q6-5Dz">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -26,7 +26,7 @@
                                             <rect key="frame" x="15" y="25" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jCN-Jg-WbM">
@@ -76,12 +76,12 @@
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="t9B-85-p7N">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
                                     </mapView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwz-Jf-jGr">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwz-Jf-jGr">
                                         <rect key="frame" x="0.0" y="448" width="600" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="FvI-6y-WOd"/>
                                         </constraints>
-                                        <state key="normal">
+                                        <state key="normal" image="talk">
                                             <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="default">
@@ -95,7 +95,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3p-Ix-axY">
-                                        <rect key="frame" x="194" y="359" width="212" height="64"/>
+                                        <rect key="frame" x="194" y="369" width="212" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="崔午阳正在讲话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8d-zF-U3d">
                                                 <rect key="frame" x="36" y="20" width="140" height="24"/>
@@ -103,7 +103,7 @@
                                                     <constraint firstAttribute="height" constant="24" id="vgm-HM-PYL"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -119,15 +119,15 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Jwz-Jf-jGr" firstAttribute="top" secondItem="s3p-Ix-axY" secondAttribute="bottom" constant="25" id="0Tl-5P-WoU"/>
+                                    <constraint firstItem="Jwz-Jf-jGr" firstAttribute="top" secondItem="s3p-Ix-axY" secondAttribute="bottom" constant="25" id="Fi9-Re-vSR"/>
                                     <constraint firstItem="s3p-Ix-axY" firstAttribute="centerX" secondItem="txr-X9-eRq" secondAttribute="centerX" id="Pya-Gp-wbS"/>
-                                    <constraint firstAttribute="trailing" secondItem="Jwz-Jf-jGr" secondAttribute="trailing" id="Qpd-Iq-Pq2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jwz-Jf-jGr" secondAttribute="trailing" id="QfB-ov-xvU"/>
                                     <constraint firstAttribute="trailing" secondItem="t9B-85-p7N" secondAttribute="trailing" id="XUM-74-b83"/>
                                     <constraint firstItem="t9B-85-p7N" firstAttribute="top" secondItem="txr-X9-eRq" secondAttribute="top" id="cpB-3T-61K"/>
                                     <constraint firstAttribute="bottom" secondItem="t9B-85-p7N" secondAttribute="bottom" id="hFk-zU-0ut"/>
-                                    <constraint firstAttribute="bottom" secondItem="Jwz-Jf-jGr" secondAttribute="bottom" id="mgt-qE-qEX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jwz-Jf-jGr" secondAttribute="bottom" id="nZz-K8-aHp"/>
                                     <constraint firstItem="t9B-85-p7N" firstAttribute="leading" secondItem="txr-X9-eRq" secondAttribute="leading" id="qQX-KW-Hjw"/>
-                                    <constraint firstItem="Jwz-Jf-jGr" firstAttribute="leading" secondItem="txr-X9-eRq" secondAttribute="leading" id="rmQ-fs-YtC"/>
+                                    <constraint firstItem="Jwz-Jf-jGr" firstAttribute="leading" secondItem="txr-X9-eRq" secondAttribute="leading" id="wGS-K4-bAV"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -175,5 +175,6 @@
     <resources>
         <image name="PTT" width="33" height="29"/>
         <image name="PTT_Unselect" width="33" height="29"/>
+        <image name="talk" width="375" height="44"/>
     </resources>
 </document>

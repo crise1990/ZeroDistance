@@ -45,7 +45,7 @@ class ZDProfileViewController: UITableViewController{
         tableView.contentInset = UIEdgeInsetsMake(imageH, 0, 0, 0)
         avatarImageView = UIImageView(frame: CGRectMake(0, -imageH, UIScreen.mainScreen().bounds.size.width, imageH))
         avatarImageView!.image = UIImage(named: "Bitmap")
-        avatarImageView!.contentMode = UIViewContentMode.ScaleAspectFit
+        avatarImageView!.contentMode = UIViewContentMode.ScaleAspectFill
         tableView.insertSubview(avatarImageView!, atIndex: 0)
         //info set
         
